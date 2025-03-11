@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    Contact Page
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or inquiries, feel free to reach out to us using the form below.</p>
+
+    <form class="form-register" method="post">
+        {{ form.hidden_tag() }}
+        
+                    {{ form.name.label() }}
+                    {{ form.name(class="form-control",  placeholder="Name") }}
+
+                    {{ form.email.label() }}
+                    {{ form.email(class="form-control",  placeholder="Email") }}
+
+                    {{ form.message.label() }}
+                    {{ form.message(class="form-control",  placeholder="Message") }}<br>
+
+                    {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+        
+    </form>
+</div>
+{% endblock %}

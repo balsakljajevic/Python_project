@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    About Page
+{% endblock %}
+
+{% block content %}
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        position: relative;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+
+    .popup {
+        display: none;
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 1);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        width: max-content;
+        max-width: 500px;
+        max-height: fit-content;
+        z-index: 100;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    li:hover .popup {
+        display: block;
+    }
+    .container{
+        background-attachment: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-image: url('static/market_bg.jpg');
+    }
+
+</style>
+
+    <div class="container" style="font-size: large;">
+        <h2>Welcome to our Technology Selling Marketplace!</h2>
+
+<p>At Balsa's, we are at the forefront of revolutionizing how technology products are bought and sold.
+In an ever-evolving world, the need for high-quality, innovative technology has never been greater,
+ and we aim to provide an exceptional platform for businesses and consumers to connect, discover, 
+ and purchase cutting-edge products that shape tomorrow.
+Founded on the principle that technology should be accessible, streamlined, and dependable, 
+we strive to deliver a marketplace that caters to the diverse needs of our global clientele. 
+Whether you are a consumer looking for the latest gadgets, a business in need of scalable tech solutions, or a reseller
+ seeking the best market opportunities, we are your one-stop destination for everything tech-related.</p>
+
+<h4>What We Offer</h4>
+
+<p>Our marketplace spans a vast range of products, like smartphones, laptops, and wearables.
+We partner with leading manufacturers, trusted distributors, and established vendors to ensure that all products listed
+ on our platform are of the highest quality, offering the latest features and the best value.
+Our cutting-edge tools, analytics, and marketing solutions help you stay ahead of the curve, expand your reach, 
+and grow your business in the competitive tech market. We believe in creating long-term relationships with our partners
+ and empowering them to succeed.</p>
+
+<h4>Why Choose Us?</h4>
+<ul>
+    <li>Extensive Selection: <span class="popup"> you’re a tech enthusiast or a business enterprise, we have an extensive selection of products that meet all your needs. From the newest devices to reliable, trusted classics, our inventory is always up to date.</span></li>
+    <li>Competitive Pricing: <span class="popup">We understand that price is a crucial factor in purchasing decisions. That’s why we offer competitive pricing to ensure you get the best value for your money. We also feature discounts, promotions, and bulk-buy options to make your experience even more cost-effective.</span></li>
+    <li>Security and Trust: <span class="popup">With our secure payment gateway and strict data protection policies, you can rest assured that your transactions are safe with us. Our marketplace is designed with your privacy and security in mind, so you can focus on making informed buying decisions.</span></li>
+    <li>Exceptional Customer Service: <span class="popup">Our dedicated customer service team is here to help with any queries you may have. Whether you need help finding the perfect product, tracking an order, or seeking support after purchase, we are committed to providing a seamless shopping experience from start to finish.</span></li>
+    <li>Global Reach: <span class="popup">Our marketplace connects buyers and sellers from around the globe. No matter where you are, our platform enables you to access the best tech products and solutions, no matter your geographical location.</span></li>
+</ul>
+<br>
+
+<h4>Our Vision</h4>
+
+<p>At Balsa's, our vision is to become the leading global marketplace for all things technology. 
+We aim to build a trusted platform where innovation thrives, and people of all backgrounds can engage with, purchase, 
+and sell the most advanced and essential technology products. As technology continues to shape the world around us, 
+we are dedicated to staying ahead of the curve and delivering products that enhance every aspect of life.</p>
+
+<h4>Join Us</h4>
+
+<p>We invite you to explore our marketplace, where technology meets opportunity. Whether you’re looking to upgrade your
+ devices, find business solutions, or sell your own products, we provide the resources and support to help you succeed. 
+ Together, we can drive the future of technology forward.</p>
+<br>
+<br>
+<h3>Thank you for choosing Balsa's — your trusted partner in the technology marketplace!</h3><br>
+<br>
+
+    </div>
+{% endblock %}
