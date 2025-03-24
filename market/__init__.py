@@ -12,7 +12,7 @@ app.config['SECRET_KEY'] = 'b55af7bc21de6ac108ff731c'  # za sigurnosni layer, pr
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app) # instanca bkripta koji nam sluzi da lozinke cuvamo enkriptovano
 login_manager = LoginManager(app)
-login_manager.login_view = "login_page" # govori login menadzeru gde da nas login requiered odvede
+login_manager.login_view = "routes.login_page" # govori login menadzeru gde da nas login requiered odvede
 login_manager.login_message_category = "info" # prikazace poruku da moramo da se logujemo u plavoj boji
 
 
