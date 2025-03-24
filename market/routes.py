@@ -6,7 +6,6 @@ from market import db
 from flask_login import login_user, logout_user, login_required, current_user 
 
 @app.route('/')     # pocetna strana kad se ucita app
-@app.route('/home') # pocetna strana kad se ucita app
 def home_page():
     return render_template('home.html')
 
